@@ -5,8 +5,8 @@ require('dotenv').config();
 
 const userRoutes = require('./routes/userRoutes');
 const transactionRoutes = require('./routes/transactionRoutes');
-app.use('/api/transactions', transactionRoutes);
 const app = express();
+app.use('/api/transactions', transactionRoutes);
 app.use(cors());
 app.use(express.json());
 
